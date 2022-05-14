@@ -7,10 +7,12 @@ Demo: https://bryanhadaway.com/testing/the-everything-menu.html
 To support everything a menu needs to be in the modern world, as simply and semantically as possible.
 
 W3C Valid*: https://validator.w3.org/nu/?doc=https%3A%2F%2Fbryanhadaway.com%2Ftesting%2Fthe-everything-menu.html
+
 WebAIM Valid: https://wave.webaim.org/report#/https://bryanhadaway.com/testing/the-everything-menu.html
+
 Schema Valid: https://validator.schema.org/#url=https%3A%2F%2Fbryanhadaway.com%2Ftesting%2Fthe-everything-menu.html
 
-* There's a warning about `role="navigation"`, but it's my understanding that this is still recommended where accessibility is concerned for backward-compatability with some screen readers. Maybe it's now safe to remove this in 2022?
+\*There's a warning about `role="navigation"`, but it's my understanding that this is still recommended where accessibility is concerned for backward-compatability with some screen readers. Maybe it's now safe to remove this in 2022?
 
 **How?**
 
@@ -20,7 +22,8 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 
 **CSS**
 
-`#menu{}
+```
+#menu{}
 #menu ul, #menu li{display:inline;position:relative;list-style:none;padding:0;margin:0}
 #menu li.parent > a:after{font-family:serif;content:' ▾'}
 #menu a{display:inline-block;text-decoration:none;padding:15px}
@@ -42,13 +45,15 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 #toggle:checked + #menu a{padding:15px 0}
 #toggle:checked + #menu ul.sub-menu{margin:0;background:none}
 #toggle:checked + #menu ul.sub-menu a{margin-left:15px}
-}`
+}
+```
 
 (there are a few opinionated bits in there, so you can probably strip it down to be even more barebones)
 
 **HTML**
 
-`<label for="toggle"><span class="visually-hidden">Menu</span></label>
+```
+<label for="toggle"><span class="visually-hidden">Menu</span></label>
 <input id="toggle" type="checkbox" />
 <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 <ul>
@@ -64,11 +69,13 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 <li><a href="#" itemprop="url"><span itemprop="name">Forgive</span></a></li>
 <li><a href="#" itemprop="url"><span itemprop="name">Me</span></a></li>
 </ul>
-</nav>`
+</nav>
+```
 
 **JavaScript/jQuery (optional)**
 
-`<script src="https://unpkg.com/jquery@latest/dist/jquery.min.js"></script>
+```
+<script src="https://unpkg.com/jquery@latest/dist/jquery.min.js"></script>
 
 <script>
 
@@ -80,6 +87,7 @@ $(this).trigger("click");
 });
 });
 
-</script>`
+</script>
+```
 
 (I think a lot of users have come to expect that the <kbd>enter</kbd> key will also toggle mobile menus, so it's probably a good idea to add this as well)
