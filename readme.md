@@ -2,7 +2,7 @@
 
 Demo: https://bryanhadaway.com/testing/the-everything-menu.html
 
-**The Goal?**
+## The Goal?
 
 To support everything a menu needs to be in the modern world, as simply and semantically as possible.
 
@@ -12,15 +12,15 @@ WebAIM Valid: https://wave.webaim.org/report#/https://bryanhadaway.com/testing/t
 
 Schema Valid: https://validator.schema.org/#url=https%3A%2F%2Fbryanhadaway.com%2Ftesting%2Fthe-everything-menu.html
 
-\*There's a warning about `role="navigation"`, but it's my understanding that this is still recommended where accessibility is concerned for backward-compatability with some screen readers. Maybe it's now safe to remove this in 2022?
+*\*There's a warning about `role="navigation"`, but it's my understanding that this is still recommended where accessibility is concerned for backward-compatability with some screen readers. Maybe it's now safe to remove this in 2022?*
 
-**How?**
+## How?
 
 This menu uses a checkbox to toggle the mobile menu open and close, but it does not rely on the popular `label + checkbox` hack. You're hovering on or tabbing to the *actual checkbox itself* and then clicking on it or hitting the <kbd>spacebar</kbd> key to toggle it.
 
 Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0.
 
-**CSS**
+## CSS
 
 ```
 #menu{}
@@ -48,9 +48,9 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 }
 ```
 
-(there are a few opinionated bits in there, so you can probably strip it down to be even more barebones)
+*(there are a few opinionated bits in there, so you can probably strip it down to be even more barebones)*
 
-**HTML**
+## HTML
 
 ```
 <label for="toggle"><span class="visually-hidden">Menu</span></label>
@@ -72,7 +72,7 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 </nav>
 ```
 
-**JavaScript/jQuery (optional)**
+## JavaScript/jQuery (optional)
 
 ```
 <script src="https://unpkg.com/jquery@latest/dist/jquery.min.js"></script>
@@ -90,4 +90,4 @@ $(this).trigger("click");
 </script>
 ```
 
-(I think a lot of users have come to expect that the <kbd>enter</kbd> key will also toggle mobile menus, so it's probably a good idea to add this as well)
+*(I think a lot of users have come to expect that the <kbd>enter</kbd> key will also toggle mobile menus, so it's probably a good idea to add this as well)*
