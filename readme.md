@@ -20,7 +20,7 @@ This menu uses a checkbox to toggle the mobile menu open and close, but it does 
 
 Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0.
 
-## CSS
+### CSS
 
 ```
 #menu{}
@@ -50,7 +50,7 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 
 *(there are a few opinionated bits in there, so you can probably strip it down to be even more barebones)*
 
-## HTML
+### HTML
 
 ```
 <label for="toggle"><span class="visually-hidden">Menu</span></label>
@@ -72,7 +72,7 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 </nav>
 ```
 
-## JavaScript/jQuery (optional)
+### JavaScript/jQuery (optional)
 
 ```
 <script src="https://unpkg.com/jquery@latest/dist/jquery.min.js"></script>
