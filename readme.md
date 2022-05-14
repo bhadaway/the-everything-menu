@@ -35,7 +35,7 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 #menu li.parent a + ul.sub-menu:hover,
 #menu li.parent a + ul.sub-menu:focus-within{left:0}
 #toggle:before{content:'\002630'}
-#toggle{display:none;appearance:none;font-family:serif;font-size:40px;text-align:center;margin:0 auto;cursor:pointer}
+#toggle{display:none;appearance:none;width:100%;font-family:serif;font-size:40px;text-align:center;margin:0 auto;cursor:pointer}
 .visually-hidden:not(:focus):not(:active){position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px 1px 1px 1px);clip:rect(1px, 1px, 1px, 1px);white-space:nowrap}
 @media(max-width:768px){
 #menu{display:none}
