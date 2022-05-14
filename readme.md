@@ -22,7 +22,7 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 
 ### CSS
 
-```
+```css
 #menu{}
 #menu ul, #menu li{display:inline;position:relative;list-style:none;padding:0;margin:0}
 #menu li.parent > a:after{font-family:serif;content:' ▾'}
@@ -52,7 +52,7 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 
 ### HTML
 
-```
+```html
 <label for="toggle"><span class="visually-hidden">Menu</span></label>
 <input id="toggle" type="checkbox" />
 <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -74,7 +74,7 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 
 ### JavaScript/jQuery (optional)
 
-```
+```javascript
 <script src="https://unpkg.com/jquery@latest/dist/jquery.min.js"></script>
 
 <script>
