@@ -2,15 +2,15 @@
 
 Demo: https://bryanhadaway.com/testing/the-everything-menu.html
 
+Donate: https://bryanhadaway.com/donate
+
 ## The Goal?
 
 To support everything a menu needs to be in the modern world, as simply and semantically as possible.
 
-W3C Valid*: https://validator.w3.org/nu/?doc=https%3A%2F%2Fbryanhadaway.com%2Ftesting%2Fthe-everything-menu.html
-
-WebAIM Valid: https://wave.webaim.org/report#/https://bryanhadaway.com/testing/the-everything-menu.html
-
-Schema Valid: https://validator.schema.org/#url=https%3A%2F%2Fbryanhadaway.com%2Ftesting%2Fthe-everything-menu.html
+* [W3C Valid](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbryanhadaway.com%2Ftesting%2Fthe-everything-menu.html)\*
+* [WebAIM Valid](https://wave.webaim.org/report#/https://bryanhadaway.com/testing/the-everything-menu.html)
+* [Schema Valid](https://validator.schema.org/#url=https%3A%2F%2Fbryanhadaway.com%2Ftesting%2Fthe-everything-menu.html)
 
 *\*There's a warning about `role="navigation"`, but it's my understanding that this is still recommended where accessibility is concerned for backward-compatability with some screen readers. Maybe it's now safe to remove this in 2022?*
 
