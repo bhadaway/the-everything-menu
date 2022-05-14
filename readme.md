@@ -29,6 +29,7 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 #menu a{display:inline-block;text-decoration:none;padding:15px}
 #menu a:hover, #menu a:focus, #toggle:hover, #toggle:focus{color:#777;transition:all .5s ease}
 #menu ul.sub-menu{display:block;position:absolute;top:100%;left:-9999px;margin-top:15px;background:#f6f6f6;z-index:9999}
+#menu ul.sub-menu a{width:100%}
 #menu li.parent a:hover + ul.sub-menu,
 #menu li.parent a:focus + ul.sub-menu,
 #menu li.parent a + ul.sub-menu:hover,
