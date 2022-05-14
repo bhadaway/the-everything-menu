@@ -81,7 +81,7 @@ Uses the trigram symbol for the hamburger icon: https://graphemica.com/%E2%98%B0
 
 jQuery(document).ready(function($) {
 $("input:checkbox").keypress(function(e) {
-if ((e.keyCode ? e.keyCode : e.which) == 13) {
+if((e.keyCode ? e.keyCode : e.which) == 13) {
 $(this).trigger("click");
 }
 });
